@@ -3,10 +3,10 @@
 
   angular
     .module('cvApp')
-    .directive('acmeNavbar', acmeNavbar);
+    .directive('appNavbar', appNavbar);
 
   /** @ngInject */
-  function acmeNavbar() {
+  function appNavbar() {
     var directive = {
       restrict: 'E',
       templateUrl: 'app/components/navbar/navbar.html',

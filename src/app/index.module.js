@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('cvApp', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngRoute', 'ngMaterial', 'toastr']);
+    .module('cvApp', ['angular-scroll-animate', 'angular-timeline', 'ngAnimate', 'ngSanitize', 'ngMessages', 'ngAria', 'ngRoute', 'ngMaterial', 'pdfjsViewer', 'toastr']);
 
 })();

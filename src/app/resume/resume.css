@@ -1,0 +1,38 @@
+.wrapper {
+    margin: 10px auto;
+    width: 65%;
+    min-width: 500px;
+}
+
+.contact {
+    background: teal;
+    width: 100%;
+    color: white;
+}
+
+.capitalize {    
+    text-transform: capitalize;
+}
+
+.lowercase {    
+    text-transform: lowercase;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.badge {
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    margin-top:20px;
+}
+
+.timeline-hidden {
+    visibility: hidden;
+}

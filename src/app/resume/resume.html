@@ -1,0 +1,148 @@
+<div class="wrapper" ng-controller="ResumeController as resume">
+  <md-content>
+    <md-card>
+        <img src="{{resume.details[0].image}}" class="md-card-image" alt="image">
+        <md-card-title>
+          <md-card-title-text layout-align="start center">
+            <span class="md-headline">{{resume.details[0].name}}</span>
+            <span class="md-subhead">{{resume.details[0].title}}</span>
+          </md-card-title-text>
+        </md-card-title>   
+        <div class="contact">
+          <md-button ng-repeat="item in resume.contactItems" class="{{item.style}}" aria-label="Contact">
+            <md-icon class="material-icon white">{{item.icon}}</md-icon> {{item.description}}
+          </md-button>
+        </div>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button class="md-raised md-primary" ng-click="resume.downloadPDF()"><md-icon class="material-icon">file_download</md-icon> Download</md-button>
+        </md-card-actions>
+        <md-card-content>
+          <p>{{resume.details[0].description}}</p>
+        </md-card-content>
+    </md-card>
+    <md-card md-theme="light-green">
+      <md-card-header>
+          <md-card-avatar>
+            <img class="md-user-avatar"><img/>
+            <md-icon class="material-icon">work</md-icon>
+          </md-card-avatar>
+          <md-card-header-text>
+            <span class="md-title">Skills</span>
+            <span class="md-subhead">Technical, Personal Skills</span>
+          </md-card-header-text>
+        </md-card-header>
+        <md-card-content layout-gt-md="row">
+          <md-content layout="column" layout-padding flex>
+            <span class="md-headline">Technical Skills</span>
+            <md-slider-container ng-repeat="item in resume.technicalSkills">
+              <span>{{item.skill}}</span>
+              <md-slider ng-model="item.rate" aria-label="{{item.skill}}"></md-slider>
+            </md-slider-container>
+          </md-content>
+          <md-content layout="column" layout-padding flex>
+            <span class="md-headline">Personal Skills</span>
+            <md-slider-container ng-repeat="item in resume.personalSkills">
+              <span>{{item.skill}}</span>
+              <md-slider ng-model="item.rate" aria-label="{{item.skill}}"></md-slider>
+            </md-slider-container>
+        </md-card-content>
+    </md-card>
+    <md-card md-theme="dark-blue">
+      <md-card-header>
+          <md-card-avatar>
+            <img class="md-user-avatar"><img/>
+            <md-icon class="material-icon">work</md-icon>
+          </md-card-avatar>
+          <md-card-header-text>
+            <span class="md-headline white">Work Experience</span>
+          </md-card-header-text>
+        </md-card-header>
+        <md-card-content>
+          <timeline flex>
+            <timeline-event ng-repeat="item in resume.workExperience" side>
+              <timeline-badge class="badge">
+              </timeline-badge>
+              <timeline-panel>
+                <md-content style="background-color: white;" layout="row">
+                  <div layout="column">
+                    <img ng-src="{{item.logo}}" alt="image">
+                  </div>
+                  <div layout="column" style="margin: 0px 10px;">
+                      <span class="md-title black">{{item.title}}</span>
+                    <div>
+                      <a class="md-subhead" href="{{item.link}}">{{item.company}}</a>
+                      <br/>
+                      <span class="md-caption black">{{item.when}}</span>
+                    </div>
+                  </div>
+                </md-content>
+              </timeline-panel>
+            </timeline-event>
+          </timeline>
+        </md-card-content>
+    </md-card>
+    <md-card md-theme="light-blue">
+      <md-card-header>
+          <md-card-avatar>
+            <img class="md-user-avatar"><img/>
+            <md-icon class="material-icon">school</md-icon>
+          </md-card-avatar>
+          <md-card-header-text>
+            <span class="md-headline">Education</span>
+          </md-card-header-text>
+        </md-card-header>
+        <md-card-content>
+          <timeline flex>
+            <timeline-event ng-repeat="item in resume.education" side>
+              <timeline-badge class="badge">
+              </timeline-badge>
+              <timeline-panel>
+                <md-content style="background-color: white;" layout="row">
+                  <div layout="column">
+                    <img ng-src="{{item.logo}}" alt="image">
+                  </div>
+                  <div layout="column" style="margin: 0px 10px;">
+                      <span class="md-title">{{item.degree}}</span>
+                    <div>
+                      <a class="md-subhead" href="{{item.link}}">{{item.university}}</a>
+                      <br/>
+                      <span class="md-caption">{{item.when}}</span>
+                    </div>
+                  </div>
+                </md-content>
+              </timeline-panel>
+            </timeline-event>
+          </timeline>
+        </md-card-content>
+    </md-card>
+    <md-card md-theme="dark-grey">
+      <md-card-header>
+          <md-card-avatar>
+            <img class="md-user-avatar"><img/>
+            <md-icon class="material-icon">extension</md-icon>
+          </md-card-avatar>
+          <md-card-header-text>
+            <span class="md-headline white">Technologies</span>
+          </md-card-header-text>
+        </md-card-header>
+        <md-card-content>
+          <md-tabs class="md-primary" md-align-tabs="top" md-stretch-tabs="auto" md-dynamic-height>
+            <md-tab ng-repeat="item in resume.techs">
+              <md-tab-label>{{item.category}}</md-tab-label>
+              <md-tab-body>
+                <div class="md-padding">
+                  <md-grid-list md-cols="2" md-cols-sm="2" md-cols-md="3" md-cols-gt-md="6"
+                    md-row-height-gt-md="4:2" md-row-height="3:1"
+                    md-gutter="8px" md-gutter-gt-sm="4px">
+                    <md-grid-tile ng-repeat="tech in item.technology">
+                      <md-grid-tile-footer><h3>{{tech.name}}</h3></md-grid-tile-footer>
+                    </md-grid-tile>
+                  </md-grid-list>
+                </div>
+              </md-tab-body>
+            </md-tab>
+          </md-tabs>
+        </md-card-content>
+    </md-card>
+  </md-content>
+</div>

@@ -5,12 +5,11 @@
         .module('cvApp')
         .controller('ResumeController', ResumeController);
 
-    ResumeController.$inject = ["resumeService", "$http"];
+    ResumeController.$inject = ["resumeService"];
 
     /** @ngInject */
-    function ResumeController(resumeService, $http) {
+    function ResumeController(resumeService) {
         var vm = this;
-        var pdfUrl = 'http://agaphetos.github.io/files/Resume-JamesLevinCalado.pdf';
 
         vm.details = [];
         vm.contactItems = [];
@@ -19,14 +18,8 @@
         vm.workExperience = [];
         vm.education = [];
         vm.techs = [];
-        vm.pdf = {
-            'src': pdfUrl,
-            'data': null
-        }
 
         init();
-
-        vm.downloadPDF = downloadPDF;
 
         function init() {
             getDetails();
@@ -64,19 +57,6 @@
 
         function getTechs() {
             vm.techs = resumeService.getTechs();
-        }
-
-        function downloadPDF() {
-            getPdfAsArrayBuffer(pdfUrl)
-                .then(function(response) {
-                    vm.pdf.data = new Uint8Array(response.data);
-                });
-        }
-    
-        function getPdfAsArrayBuffer (pdfUrl) {
-            return $http.get(pdfUrl, {
-                responseType: 'arraybuffer'
-            });
         }
     }
 })();

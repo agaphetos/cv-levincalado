@@ -10,7 +10,7 @@
     /** @ngInject */
     function ResumeController(resumeService, $http) {
         var vm = this;
-        var pdfUrl = 'assets/files/Resume-JamesLevinCalado.pdf';
+        var pdfUrl = 'http://agaphetos.github.io/files/Resume-JamesLevinCalado.pdf';
 
         vm.details = [];
         vm.contactItems = [];

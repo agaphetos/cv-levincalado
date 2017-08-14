@@ -1,6 +1,17 @@
 .wrapper {
     margin: 10px auto;
-    width: 90%;
+    width: 60%;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.profile-image {
+    background: #00897b;
 }
 
 .contact {
@@ -34,4 +45,11 @@
 
 .timeline-hidden {
     visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .wrapper {
+        width: 95%;
+    }
 }

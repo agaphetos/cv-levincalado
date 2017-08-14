@@ -1,24 +1,26 @@
 <div class="wrapper" ng-controller="ResumeController as resume">
   <md-content>
     <md-card>
-        <img src="{{resume.details[0].image}}" class="md-card-image" alt="image">
-        <md-card-title>
-          <md-card-title-text layout-align="start center">
-            <span class="md-headline">{{resume.details[0].name}}</span>
-            <span class="md-subhead">{{resume.details[0].title}}</span>
-          </md-card-title-text>
-        </md-card-title>   
-        <div class="contact">
-          <md-button ng-repeat="item in resume.contactItems" class="{{item.style}}" aria-label="Contact">
-            <md-icon class="material-icon white">{{item.icon}}</md-icon> {{item.description}}
-          </md-button>
-        </div>
-        <md-card-actions layout="row" layout-align="end center">
-          <md-button class="md-raised md-primary" href="http://agaphetos.github.io/files/Resume-JamesLevinCalado.pdf" download><md-icon class="material-icon">file_download</md-icon> Download</md-button>
-        </md-card-actions>
-        <md-card-content>
-          <p>{{resume.details[0].description}}</p>
-        </md-card-content>
+      <div class="profile-image">
+        <img src="{{resume.details[0].image}}" class="img-circle" alt="image">
+      </div>
+      <md-card-title>
+        <md-card-title-text layout-align="start center">
+          <span class="md-headline">{{resume.details[0].name}}</span>
+          <span class="md-subhead">{{resume.details[0].title}}</span>
+        </md-card-title-text>
+      </md-card-title>
+      <div class="contact">
+        <md-button ng-repeat="item in resume.contactItems" class="{{item.style}}" aria-label="Contact">
+          <md-icon class="material-icon white">{{item.icon}}</md-icon> {{item.description}}
+        </md-button>
+      </div>
+      <md-card-actions layout="row" layout-align="end center">
+        <md-button class="md-raised md-primary" href="http://agaphetos.github.io/files/Resume-JamesLevinCalado.pdf" download><md-icon class="material-icon">file_download</md-icon> Download</md-button>
+      </md-card-actions>
+      <md-card-content>
+        <p>{{resume.details[0].description}}</p>
+      </md-card-content>
     </md-card>
     <md-card md-theme="light-green">
       <md-card-header>

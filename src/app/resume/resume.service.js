@@ -37,7 +37,7 @@
       {
         'style': 'lowercase',
         'icon': 'link',
-        'description': 'levincalado.asia'
+        'description': 'levincalado.me'
       }
     ];
 

@@ -82,3 +82,31 @@ section.jumbotron h1 {
   float: right;
   width: 100px;
 }
+
+.wrapper {
+  margin: 10px auto;
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .wrapper {
+        width: 95%;
+    }
+}
+
+.capitalize {    
+  text-transform: capitalize;
+}
+
+.lowercase {    
+  text-transform: lowercase;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}

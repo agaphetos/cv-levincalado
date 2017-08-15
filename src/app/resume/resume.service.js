@@ -36,7 +36,7 @@
       },
       {
         'style': 'lowercase',
-        'icon': 'link',
+        'icon': 'public',
         'description': 'levincalado.me'
       }
     ];

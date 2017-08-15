@@ -27,13 +27,13 @@
         var webPages = [            
             {
                 'title': 'yoAngularGulpHeroku',
-                'description': 'An AngularJS + Gulp boilerplate generated using Yeoman generator. Ready to deploy on Heroku. Created for personal used. Fork if you like.',
+                'description': 'An AngularJS + Gulp boilerplate generated using Yeoman generator. Ready to deploy on Heroku. Created for personal use. Fork if you like.',
                 'image': 'assets/images/yo-angular-gulp-heroku.png',
                 'link': 'https://github.com/agaphetos/yo-angular-gulp-heroku'
             },
             {
                 'title': 'Vices PH',
-                'description': 'A band web site page I created for my Vices band. Features responsive design. Built with HTML/5, CSS/3, Bootstrap.',
+                'description': 'A band web site page I created for Vices band. Features responsive design. Built with HTML/5, CSS/3, Bootstrap.',
                 'image': 'assets/images/vicesph.jpg',
                 'link': 'http://vicesph.herokuapp.com'
             },

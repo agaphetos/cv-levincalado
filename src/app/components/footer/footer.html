@@ -1,0 +1,12 @@
+<div ng-controller="FooterController as footer">
+    <div class="copyright" layout-gt-md="row" layout-align="center center" layout-padding>
+        <p class="md-body-1">&copy; 2017 All rights reserved.</p>
+        <span>
+            <a class="links" ng-repeat="item in footer.socialLinks" 
+                href="{{item.link}}" target="_blank">
+                <i class="fa {{item.icon}} fa-lg" aria-hidden="true"></i>
+            </a>
+        </span>
+        <p class="md-body-1">Built with <i class="fa fa-heart-o" aria-hidden="true"></i> by Levin Calado</p>
+    </div>
+</div>

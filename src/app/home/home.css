@@ -6,9 +6,9 @@
     margin: 20px auto;
 }
 
-.content {
+.home-content {
     display: block;
-    margin: 100px auto;
+    margin: 0px auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -28,12 +28,4 @@
     opacity: 0.8;
     background-size: cover;
     color: white;
-}
-
-.yellow-green {
-    color: yellowgreen;
-}
-
-.dark-blue {
-    color: #002AFF;
 }

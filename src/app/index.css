@@ -37,8 +37,17 @@
   font-feature-settings: 'liga';
 }
 
-html {
+html, body {
   font-family: 'Roboto', serif;
+  height: 100%;
+}
+
+.content {
+  min-height: 80%;
+}
+
+.footer {
+  position: relative;
 }
 
 [layout=row] {
@@ -52,7 +61,6 @@ md-toolbar.md-default-theme {
 .wrapper {
   margin: 10px auto;
   width: 60%;
-  min-height: 500px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -76,4 +84,12 @@ md-toolbar.md-default-theme {
 
 .black {
   color: black;
+}
+
+.yellow-green {
+    color: yellowgreen;
+}
+
+.dark-blue {
+    color: #002AFF;
 }

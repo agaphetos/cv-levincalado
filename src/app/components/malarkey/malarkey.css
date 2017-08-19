@@ -1,12 +1,11 @@
-.acme-malarkey {
-  text-transform: capitalize;
-  color: #cb3837;
+.app-malarkey {
+  color: aqua;
 }
 
-.acme-malarkey:after {
+.app-malarkey:after {
   animation: cursor-blink 0.4s linear infinite;
   content: "|";
-  color: #cb3837;
+  color: seagreen;
 }
 
 @keyframes cursor-blink {

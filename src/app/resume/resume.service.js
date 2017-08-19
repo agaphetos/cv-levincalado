@@ -44,46 +44,46 @@
     var technicalSkills = [
       {
         'skill': 'Software/Web Development',
-        'rate': '90'
+        'rate': 90
       },
       {
         'skill': 'Databases',
-        'rate': '98'
+        'rate': 98
       },
       {
         'skill': 'Programming',
-        'rate': '93'
+        'rate': 93
       },
       {
         'skill': 'Java EE',
-        'rate': '75'
+        'rate': 75
       },
       {
         'skill': 'AngularJS',
-        'rate': '85'
+        'rate': 85
       },
       {
         'skill': 'System Analysis and Design',
-        'rate': '90'
+        'rate': 90
       }
     ];
 
     var personalSkills = [
       {
         'skill': 'Communcation',
-        'rate': '90'
+        'rate': 90
       },
       {
         'skill': 'Team Work',
-        'rate': '98'
+        'rate': 98
       },
       {
         'skill': 'Dedication',
-        'rate': '95'
+        'rate': 95
       },
       {
         'skill': 'Creativity',
-        'rate': '80'
+        'rate': 80
       }
     ];
 

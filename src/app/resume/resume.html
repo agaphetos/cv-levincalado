@@ -38,17 +38,22 @@
         <md-card-content layout-gt-md="row">
           <md-content layout="column" layout-padding flex>
             <span class="md-headline">Technical Skills</span>
-            <md-slider-container ng-repeat="item in resume.technicalSkills">
+            <div ng-repeat="item in resume.technicalSkills">
               <span>{{item.skill}}</span>
-              <md-slider ng-model="item.rate" aria-label="{{item.skill}}" disabled></md-slider>
-            </md-slider-container>
+              <md-slider-container>
+                <md-slider ng-model="item.rate" aria-label="{{item.skill}}" disabled></md-slider>
+              </md-slider-container>
+            </div>
           </md-content>
+          <md-divider></md-divider>
           <md-content layout="column" layout-padding flex>
             <span class="md-headline">Personal Skills</span>
-            <md-slider-container ng-repeat="item in resume.personalSkills">
+            <div ng-repeat="item in resume.personalSkills">
               <span>{{item.skill}}</span>
-              <md-slider ng-model="item.rate" aria-label="{{item.skill}}" disabled></md-slider>
-            </md-slider-container>
+              <md-slider-container>
+                <md-slider ng-model="item.rate" aria-label="{{item.skill}}" disabled></md-slider>
+              </md-slider-container>
+            </div>
         </md-card-content>
     </md-card>
     <md-card md-theme="dark-blue">

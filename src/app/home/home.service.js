@@ -31,6 +31,11 @@
             'icon': 'fa-linkedin'
           },
           {
+            'name': 'Google+',
+            'link': 'http://google.com/+LevinCaladoAgaphetos',
+            'icon': 'fa-google-plus'
+          },
+          {
             'name': 'Github',
             'link': 'http://github.com/agaphetos',
             'icon': 'fa-github'

@@ -41,6 +41,11 @@ html {
   font-family: 'Roboto', serif;
 }
 
+body, md-content, .bg-grey {
+  background-color: #eceff1;
+  fill: #eceff1;
+}
+
 [layout=row] {
   flex-direction: row;
 }

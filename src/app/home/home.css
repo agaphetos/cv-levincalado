@@ -9,7 +9,6 @@
 .content {
     display: block;
     margin: 100px auto;
-    min-height: 390px;
 }
 
 @media only screen and (max-width: 768px) {

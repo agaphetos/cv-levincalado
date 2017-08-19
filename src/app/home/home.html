@@ -1,0 +1,26 @@
+<div class="wrapper">
+    <md-content class="content">
+        <div layout-gt-md="column">
+            <md-card class="profile">
+                <div layout-gt-md="row" layout-align="center center">
+                    <div layout-padding>
+                        <img src="{{home.data.image}}" class="img-circle-const" alt="image">
+                    </div>
+                    <div layout="column" layout-align="center center" layout-padding>
+                        <span class="md-display-1">{{home.data.title}}</span>
+                        <span class="md-subhead">{{home.data.subtitle}}</span>
+                        <div layout="row" layout-align="space-between">
+                            <md-button ng-repeat="item in home.socialLinks" 
+                                class="md-icon-button" aria-label="{{item.name}}" href="{{item.link}}" target="_blank">
+                                <i class="fa {{item.icon}} fa-lg" aria-hidden="true"></i>
+                            </md-button>
+                        </div>
+                    </div>
+                </div>
+            </md-card>
+            <md-card class="bottom-section" layout-padding layout-align="center center">
+                <span class="md-headline"> I like to<app-malarkey></app-malarkey></span>
+            </md-card>            
+        </div>
+    </md-content>
+</div>

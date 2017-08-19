@@ -1,0 +1,29 @@
+.img-circle-const {
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.content {
+    display: block;
+    margin: 100px auto;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .content {
+        margin: 0px auto;
+    }
+}
+
+.profile {
+    background: url('../../assets/images/material-background.jpg') center;
+    background-size: cover;
+}
+
+.bottom-section {
+    background: url('../../assets/images/material-background-2.jpg') center;
+    background-size: cover;
+}

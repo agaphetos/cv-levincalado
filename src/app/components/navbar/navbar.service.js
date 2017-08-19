@@ -28,7 +28,7 @@
       },
       {
         'title': 'Contact',
-        'description': 'Want to work with me?',
+        'description': 'Leave me a message',
         'route': 'contact',
         'icon': 'email'
       }

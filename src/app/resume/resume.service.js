@@ -9,14 +9,12 @@
 
   /** @ngInject */
   function resumeService() {
-    var details = [
-      {
-        'name': 'James Levin Calado',
-        'title': 'Software Developer',
-        'description': 'A software developer that has extensive knowledge on both front and back-end development, I am a competitor, detailed-oriented person, and a team-player, able to deliver efficient and effective output. I like challenges and it makes me more focused on the task.',
-        'image': 'assets/images/profile.jpg'
-      }
-    ];
+    var details = {
+      'name': 'James Levin Calado',
+      'title': 'Software Developer',
+      'description': 'A software developer that has extensive knowledge on both front and back-end development, I am a competitor, detailed-oriented person, and a team-player, able to deliver efficient and effective output. I like challenges and it makes me more focused on the task.',
+      'image': 'assets/images/profile.jpg'
+    };
 
     var contact = [
       {

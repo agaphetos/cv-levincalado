@@ -11,7 +11,7 @@
     function ResumeController(resumeService) {
         var vm = this;
 
-        vm.details = [];
+        vm.details = {};
         vm.contactItems = [];
         vm.technicalSkills = [];
         vm.personalSkills = [];

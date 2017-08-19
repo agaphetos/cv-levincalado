@@ -11,9 +11,9 @@
         redirectTo: '/home'
       })
       .when('/home', {
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+        templateUrl: 'app/home/home.html',
+        controller: 'HomeController',
+        controllerAs: 'home'
       })
       .when('/resume', {
         templateUrl: 'app/resume/resume.html',

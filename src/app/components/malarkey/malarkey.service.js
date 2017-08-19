@@ -9,13 +9,13 @@
     function malarkeyService() {
         var hobbies = [
             {
-                'name': 'write code'
+                'name': 'i like to write code'
             },
             {
-                'name': 'create apps'
+                'name': 'i love to create apps'
             },
             {
-                'name': 'learn new technologies'
+                'name': 'and learn new technologies'
             }
         ];
 

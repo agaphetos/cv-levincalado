@@ -87,9 +87,14 @@ md-toolbar.md-default-theme {
 }
 
 .yellow-green {
-    color: yellowgreen;
+  color: yellowgreen;
 }
 
 .dark-blue {
-    color: #002AFF;
+  color: #002AFF;
+}
+
+.dark-grey {
+  color: darkslategray;
+  opacity: 0.6;
 }

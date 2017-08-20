@@ -12,8 +12,10 @@
       </md-card-title>
       <div class="contact" layout-gt-md="row">
         <span flex></span>
-        <md-button ng-repeat="item in resume.contactItems" class="{{item.style}}" aria-label="Contact">
-          <md-icon class="material-icon white">{{item.icon}}</md-icon> {{item.description}}
+        <md-button ng-repeat="item in resume.contactItems" class="{{item.style}}" 
+                  ng-href="{{item.link}}" target="_blank" aria-label="{{item.description}}">
+          <md-icon ng-if="item.iconset=='material'" class="material-icon white">{{item.icon}}</md-icon> 
+          <i ng-if="item.iconset=='fa'" class="fa {{item.icon}} fa-lg"></i> {{item.description}}
         </md-button>
         <span flex></span>
       </div>

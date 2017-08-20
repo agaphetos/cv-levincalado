@@ -19,23 +19,35 @@
     var contact = [
       {
         'style': 'lowercase',
+        'iconset': 'material',
         'icon': 'email',
         'description': 'levin.calado@live.com'
       },
       {
         'style': '',
+        'iconset': 'material',
         'icon': 'phone',
         'description': '(+63) 908-156-4985'
       },
       {
         'style': 'capitalize',
+        'iconset': 'material',
         'icon': 'location_on',
         'description': 'Cainta, Rizal'
       },
       {
         'style': 'lowercase',
+        'iconset': 'material',
         'icon': 'public',
-        'description': 'levincalado.me'
+        'description': 'levincalado.me',
+        'link': 'http://levincalado.me'
+      },
+      {
+        'style': 'lowercase',
+        'iconset': 'fa',
+        'icon': 'fa-linkedin',
+        'description': 'linkedin.com/in/agaphetos',
+        'link': 'http://linkedin.com/in/agaphetos'
       }
     ];
 

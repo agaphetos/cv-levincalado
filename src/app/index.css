@@ -98,3 +98,7 @@ md-toolbar.md-default-theme {
   color: darkslategray;
   opacity: 0.6;
 }
+
+.red {
+  color: red;
+}

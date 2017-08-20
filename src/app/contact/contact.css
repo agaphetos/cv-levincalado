@@ -1,0 +1,11 @@
+.contact-form {
+    width: 450px;
+    margin: 10px auto;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .contact-form {
+        width: 95%;
+    }
+}

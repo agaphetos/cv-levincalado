@@ -1,1 +1,47 @@
-<p>Contact Page</p>
+<div class="wrapper">
+    <md-content layout="row">
+        <md-card class="contact-form">
+            <md-toolbar>
+                <div class="md-toolbar-tools">
+                    <h3><span>Leave a message</span></h3>
+                </div>
+            </md-toolbar>
+            <md-content class="md-no-momentum" layout="column" layout-padding>
+                <form name="contact.form">
+                    <div layout="row" flex>
+                        <span flex></span>
+                        <md-input-container class="md-block">
+                            <label>Date</label>
+                            <md-datepicker ng-model="contact.message.date" disabled></md-datepicker>
+                        </md-input-container>
+                    </div>
+                    <md-input-container class="md-icon-float md-block">
+                        <label>Name</label>
+                        <md-icon class="material-icon">person</md-icon>
+                        <input ng-model="contact.message.name" type="text" required disabled>
+                    </md-input-container>
+                    <md-input-container class="md-icon-float md-block">
+                        <label>Email</label>
+                        <md-icon class="material-icon">email</md-icon>
+                        <input ng-model="contact.message.email" type="email" required disabled>
+                    </md-input-container>
+                    <md-input-container class="md-icon-float md-block">
+                        <label>Message</label>
+                        <md-icon class="material-icon">message</md-icon>
+                        <textarea ng-model="contact.message.content" md-maxlength="500" rows="3" md-select-on-focus required disabled></textarea>
+                    </md-input-container>
+                    <div layout="row" layout-align="end center">
+                    <span class="md-subhead red"><md-icon class="material-icon red">info</md-icon> This is a work in progress.</span>
+                    <span flex></span>
+                    <md-button type="submit" class="md-fab md-mini md-primary md-hue-2" aria-label="send" ng-click="contact.submit()" disabled>
+                        <md-icon class="material-icon">send</md-icon>
+                    </md-button>
+                    <md-button class="md-fab md-mini" aria-label="send" ng-click="contact.reset()" disabled>
+                        <md-icon class="material-icon">clear</md-icon>
+                    </md-button>
+                    </div>
+                </form>
+            </md-content>
+        </md-card>
+    </md-content>
+</div>

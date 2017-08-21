@@ -152,7 +152,7 @@
             'name': 'C#'
           },
           {
-            'name': 'C/C++'
+            'name': 'COBOL'
           },
           {
             'name': 'Ruby'

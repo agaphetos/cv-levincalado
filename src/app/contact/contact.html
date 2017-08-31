@@ -18,25 +18,25 @@
                     <md-input-container class="md-icon-float md-block">
                         <label>Name</label>
                         <md-icon class="material-icon">person</md-icon>
-                        <input ng-model="contact.message.name" type="text" required disabled>
+                        <input ng-model="contact.message.name" type="text" required>
                     </md-input-container>
                     <md-input-container class="md-icon-float md-block">
                         <label>Email</label>
                         <md-icon class="material-icon">email</md-icon>
-                        <input ng-model="contact.message.email" type="email" required disabled>
+                        <input ng-model="contact.message.email" type="email" required>
                     </md-input-container>
                     <md-input-container class="md-icon-float md-block">
                         <label>Message</label>
                         <md-icon class="material-icon">message</md-icon>
-                        <textarea ng-model="contact.message.content" md-maxlength="500" rows="3" md-select-on-focus required disabled></textarea>
+                        <textarea ng-model="contact.message.content" md-maxlength="500" rows="3" md-select-on-focus required></textarea>
                     </md-input-container>
                     <div layout="row" layout-align="end center">
                     <span class="md-subhead red"><md-icon class="material-icon red">info</md-icon> This is a work in progress.</span>
                     <span flex></span>
-                    <md-button type="submit" class="md-fab md-mini md-primary md-hue-2" aria-label="send" ng-click="contact.submit()" disabled>
+                    <md-button type="submit" class="md-fab md-mini md-primary md-hue-2" aria-label="send" ng-click="contact.submit()">
                         <md-icon class="material-icon">send</md-icon>
                     </md-button>
-                    <md-button class="md-fab md-mini" aria-label="send" ng-click="contact.reset()" disabled>
+                    <md-button class="md-fab md-mini" aria-label="send" ng-click="contact.reset()">
                         <md-icon class="material-icon">clear</md-icon>
                     </md-button>
                     </div>
